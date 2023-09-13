@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="preFacts" class="prefact">
+        <p class="principalText">Clique no botão abaixo para ver um fato aleatório</p>
+        <button class="button" onclick="toggleFact()">VER FATO</button>
+      </div>
+
+      <div id="showFact" class="showFact">
+        <p class="fact">A mulher abaixo é a mulher mais bonita do mundo inteiro 👆🏻👆🏻👆🏻</p>
+        <p class="fact">
+          Você, Giovanna Ligeiro, é a mulher mais bela e perfeita. Não importa quantos anos passem, você nunca vai
+          deixar de ser bela. Além da sua beleza exterior, é o seu coração gentil e a sua alma radiante que me cativam
+          todos os dias. Cada momento ao seu lado é como um conto de fadas, e eu me sinto o homem mais sortudo do mundo
+          por ter você ao meu lado. Meu amor por você só cresce a cada dia que passa, e quero que você saiba que estarei
+          aqui, amando e cuidando de você, hoje e para sempre. Gatinha, você é o meu sonho tornado realidade, a minha
+          inspiração e o meu amor eterno. 💖
+        </p>
+        <img src="./assets/mostBEAUTIFUL PERSON.png" alt="" class="princess" />
+        <audio id="audio" controls style="display: none">
+          <source src="./assets/DECLARACAO.mp3" type="audio/mpeg" />
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
+      </div>
+    </div>
+  </body>
+  <script>
+    function toggleFact() {
+      const showFact = document.getElementById('showFact').style.display
+      document.getElementById('showFact').style.display = 'flex'
+      document.getElementById('showFact').style.flexDirection = 'column'
+      document.getElementById('showFact').style.justifyContent = 'center'
+      document.getElementById('showFact').style.alignItems = 'center'
+      document.getElementById('preFacts').style.display = 'none'
+      document.getElementById('audio').play()
+    }
+  </script>
+</html>

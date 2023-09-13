@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  background-color:	#702963;
+  height: 96vh;
+}
+
+.principalText {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fact {
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  background: #5D3FD3;
+  color: white;
+}
+
+.princess{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+.prefact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showFact {
+  display: none;
+}
